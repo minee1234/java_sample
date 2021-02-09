@@ -9,9 +9,15 @@
 
     <Button
         android:id="@+id/btn_custom_toast"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick"
         android:text="Custom Toast" />
+
+    <Button
+        android:id="@+id/btn_reactive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="reactive android" />
 
 </LinearLayout>

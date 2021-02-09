@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "143327226480",
+    "project_id": "javasample-13c48",
+    "storage_bucket": "javasample-13c48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143327226480:android:325aaeb0052f56d87822b5",
+        "android_client_info": {
+          "package_name": "com.minee.java_sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143327226480-i6ij26g9qacaj2quunn4dl8odn11rhu4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.minee.java_sample",
+            "certificate_hash": "e9af5ca7684f1aaeb3161c5de90d98d64c0c5369"
+          }
+        },
+        {
+          "client_id": "143327226480-r5p370k0avd2g2p3tfb207cbhohop3n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA03y1crE2MZudhe-O-Mk1HBmRg8f1QCTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143327226480-r5p370k0avd2g2p3tfb207cbhohop3n1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
