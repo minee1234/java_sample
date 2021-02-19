@@ -9,6 +9,7 @@ import com.minee.java_sample.R;
 import com.minee.java_sample.databinding.ActivityPokemonBinding;
 import com.minee.java_sample.ui.fragments.Favorites;
 import com.minee.java_sample.ui.fragments.Home;
+import com.minee.java_sample.ui.fragments.HomeDataBinding;
 
 import dagger.hilt.android.AndroidEntryPoint;
 
@@ -32,7 +33,8 @@ public class PokemonActivity extends AppCompatActivity {
                 if (isFavoriteListVisible) {
                     isFavoriteListVisible = false;
                     binding.changeFragment.setText("Favorites");
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new Home()).commit();
+                    //getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new Home()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new HomeDataBinding()).commit();
                 } else {
                     isFavoriteListVisible = true;
                     binding.changeFragment.setText("Home");

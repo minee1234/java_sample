@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="pokemon"
+            type="com.minee.java_sample.model.Pokemon" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:id="@+id/pokemonImage"
+                app:imageUrl="@{pokemon.url}"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/pokemonImage"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:id="@+id/pokemonName"
+                android:text="@{pokemon.name}"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
