@@ -5,7 +5,7 @@
     <data>
         <variable
             name="pokemon"
-            type="com.minee.java_sample.model.Pokemon" />
+            type="com.minee.java_sample.arch.model.Pokemon" />
     </data>
 
     <androidx.cardview.widget.CardView

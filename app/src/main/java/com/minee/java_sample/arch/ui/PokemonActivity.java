@@ -1,4 +1,4 @@
-package com.minee.java_sample.ui;
+package com.minee.java_sample.arch.ui;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,10 +6,10 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.minee.java_sample.R;
+import com.minee.java_sample.arch.ui.fragments.Favorites;
+import com.minee.java_sample.arch.ui.fragments.Home;
+import com.minee.java_sample.arch.ui.fragments.HomeDataBinding;
 import com.minee.java_sample.databinding.ActivityPokemonBinding;
-import com.minee.java_sample.ui.fragments.Favorites;
-import com.minee.java_sample.ui.fragments.Home;
-import com.minee.java_sample.ui.fragments.HomeDataBinding;
 
 import dagger.hilt.android.AndroidEntryPoint;
 

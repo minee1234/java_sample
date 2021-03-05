@@ -10,7 +10,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.PokemonActivity"></activity>
+        <activity android:name=".deeplink.CountryActivity"></activity>
+        <activity android:name=".deeplink.BaseActivity" />
+        <activity android:name=".deeplink.DetailActivity" />
+        <activity
+            android:name=".deeplink.SchemeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/minee_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".arch.ui.PokemonActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

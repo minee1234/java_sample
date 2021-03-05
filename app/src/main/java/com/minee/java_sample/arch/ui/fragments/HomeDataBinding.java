@@ -1,4 +1,4 @@
-package com.minee.java_sample.ui.fragments;
+package com.minee.java_sample.arch.ui.fragments;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -16,10 +16,10 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.minee.java_sample.adapters.PokemonDatabindingAdapter;
+import com.minee.java_sample.arch.adapters.PokemonDatabindingAdapter;
+import com.minee.java_sample.arch.model.Pokemon;
+import com.minee.java_sample.arch.viewmodel.PokemonViewModel;
 import com.minee.java_sample.databinding.DatabindingHomeBinding;
-import com.minee.java_sample.model.Pokemon;
-import com.minee.java_sample.viewmodel.PokemonViewModel;
 
 import java.util.ArrayList;
 

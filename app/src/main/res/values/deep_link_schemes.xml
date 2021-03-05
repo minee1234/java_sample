@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="minee_scheme">minee</string>
+
+    <string name="scheme_host_main">main</string>
+    <string name="scheme_host_detail">detail</string>
+    <string name="scheme_host_country">country</string>
+</resources>

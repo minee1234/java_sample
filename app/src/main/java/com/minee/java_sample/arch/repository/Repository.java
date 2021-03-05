@@ -1,12 +1,11 @@
-package com.minee.java_sample.repository;
+package com.minee.java_sample.arch.repository;
 
 import androidx.lifecycle.LiveData;
 
-import com.minee.java_sample.db.PokeDao;
-import com.minee.java_sample.model.Pokemon;
-import com.minee.java_sample.model.PokemonResponse;
-import com.minee.java_sample.network.PokeApiService;
-
+import com.minee.java_sample.arch.db.PokeDao;
+import com.minee.java_sample.arch.model.Pokemon;
+import com.minee.java_sample.arch.model.PokemonResponse;
+import com.minee.java_sample.arch.network.PokeApiService;
 
 import java.util.List;
 
@@ -16,8 +15,8 @@ import io.reactivex.rxjava3.core.Observable;
 
 public class Repository {
 
-    private PokeDao pokeDao;
-    private PokeApiService apiService;
+    private final PokeDao pokeDao;
+    private final PokeApiService apiService;
 
     @Inject
     public Repository(PokeDao pokeDao, PokeApiService apiService) {

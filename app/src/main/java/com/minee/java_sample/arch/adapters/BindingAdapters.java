@@ -1,4 +1,4 @@
-package com.minee.java_sample.adapters;
+package com.minee.java_sample.arch.adapters;
 
 import android.graphics.drawable.Drawable;
 import android.widget.ImageView;

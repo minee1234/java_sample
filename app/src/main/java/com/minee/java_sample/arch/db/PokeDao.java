@@ -1,11 +1,11 @@
-package com.minee.java_sample.db;
+package com.minee.java_sample.arch.db;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.minee.java_sample.model.Pokemon;
+import com.minee.java_sample.arch.model.Pokemon;
 
 import java.util.List;
 

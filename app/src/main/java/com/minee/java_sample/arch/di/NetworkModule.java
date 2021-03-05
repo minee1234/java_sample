@@ -1,6 +1,6 @@
-package com.minee.java_sample.di;
+package com.minee.java_sample.arch.di;
 
-import com.minee.java_sample.network.PokeApiService;
+import com.minee.java_sample.arch.network.PokeApiService;
 
 import javax.inject.Singleton;
 

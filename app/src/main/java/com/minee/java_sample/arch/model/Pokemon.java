@@ -1,4 +1,4 @@
-package com.minee.java_sample.model;
+package com.minee.java_sample.arch.model;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

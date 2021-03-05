@@ -1,4 +1,4 @@
-package com.minee.java_sample.adapters;
+package com.minee.java_sample.arch.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,14 +8,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.minee.java_sample.arch.model.Pokemon;
 import com.minee.java_sample.databinding.ListItemBinding;
-import com.minee.java_sample.model.Pokemon;
 
 import java.util.ArrayList;
 
 public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonViewHolder> {
 
-    private Context mContext;
+    private final Context mContext;
     private ArrayList<Pokemon> mList;
     private ListItemBinding binding;
 
@@ -55,7 +55,7 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
 
 
     class PokemonViewHolder extends RecyclerView.ViewHolder {
-        private ListItemBinding itemBinding;
+        private final ListItemBinding itemBinding;
 
         public PokemonViewHolder(ListItemBinding itemBinding) {
             super(itemBinding.getRoot());

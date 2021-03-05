@@ -1,4 +1,4 @@
-package com.minee.java_sample.viewmodel;
+package com.minee.java_sample.arch.viewmodel;
 
 import android.util.Log;
 
@@ -6,9 +6,9 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.minee.java_sample.model.Pokemon;
-import com.minee.java_sample.model.PokemonResponse;
-import com.minee.java_sample.repository.Repository;
+import com.minee.java_sample.arch.model.Pokemon;
+import com.minee.java_sample.arch.model.PokemonResponse;
+import com.minee.java_sample.arch.repository.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,8 +24,8 @@ import io.reactivex.rxjava3.schedulers.Schedulers;
 public class PokemonViewModel extends ViewModel {
     private static final String TAG = "PokemonViewModel";
 
-    private Repository repository;
-    private MutableLiveData<ArrayList<Pokemon>> pokemonList = new MutableLiveData<>();
+    private final Repository repository;
+    private final MutableLiveData<ArrayList<Pokemon>> pokemonList = new MutableLiveData<>();
     private LiveData<List<Pokemon>> favoritePokemonList = null;
 
     @Inject

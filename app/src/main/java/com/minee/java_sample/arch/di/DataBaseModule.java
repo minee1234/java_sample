@@ -1,11 +1,11 @@
-package com.minee.java_sample.di;
+package com.minee.java_sample.arch.di;
 
 import android.app.Application;
 
 import androidx.room.Room;
 
-import com.minee.java_sample.db.PokeDao;
-import com.minee.java_sample.db.PokemonDB;
+import com.minee.java_sample.arch.db.PokeDao;
+import com.minee.java_sample.arch.db.PokemonDB;
 
 import org.jetbrains.annotations.NotNull;
 
